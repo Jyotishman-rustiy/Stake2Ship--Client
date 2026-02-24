@@ -5,7 +5,7 @@ import { useWallet } from "@solana/wallet-adapter-react";
 import { useStake2Ship } from "@/hooks/initialize.task";
 import { X } from "lucide-react";
 
-export default function HomeHero() {
+export default function Hero() {
   const { publicKey } = useWallet();
   const { initializeTask } = useStake2Ship();
 
