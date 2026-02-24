@@ -4,7 +4,7 @@ import { useEffect, useState, useCallback } from 'react';
 import * as borsh from 'borsh';
 import { taskAccountSchema } from '@/utils/borshSchema';
 
-const PROGRAM_ID = new PublicKey("8nNa9rpTmke4c6ii6gFzFtrgTDL6rRs7EmAjGRZ7Dv4P");
+const PROGRAM_ID = new PublicKey("FTWeRFMXmcHxhXzw4Jyo96BhXJ5bu1eAekWhunJ1s5Hb");
 
 interface TaskAccount {
   is_initialized: boolean;

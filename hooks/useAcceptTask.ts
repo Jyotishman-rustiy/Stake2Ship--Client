@@ -2,7 +2,7 @@ import { useConnection, useWallet } from '@solana/wallet-adapter-react';
 import { PublicKey, SystemProgram, Transaction, TransactionInstruction } from '@solana/web3.js';
 import { Buffer } from 'buffer';
 
-const PROGRAM_ID = new PublicKey("8nNa9rpTmke4c6ii6gFzFtrgTDL6rRs7EmAjGRZ7Dv4P");
+const PROGRAM_ID = new PublicKey("FTWeRFMXmcHxhXzw4Jyo96BhXJ5bu1eAekWhunJ1s5Hb");
 
 export function useAcceptTask() {
   const { connection } = useConnection();

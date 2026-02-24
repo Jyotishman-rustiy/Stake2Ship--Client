@@ -14,7 +14,7 @@ import * as borsh from "borsh";
 import { initializeTaskSchema } from "@/utils/borshSchema";
 
 const PROGRAM_ID = new PublicKey(
-  "8nNa9rpTmke4c6ii6gFzFtrgTDL6rRs7EmAjGRZ7Dv4P"
+  "FTWeRFMXmcHxhXzw4Jyo96BhXJ5bu1eAekWhunJ1s5Hb"
 );
 
 
