@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { useStake2Ship } from "@/hooks/initialize.task";
 import { X } from "lucide-react";
+import Link from "next/link";
 
 export default function Hero() {
   const { publicKey } = useWallet();
@@ -75,7 +76,7 @@ export default function Hero() {
 
   return (
     <>
-      {/* ---------------- MODAL ---------------- */}
+      
       {isModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4">
           <div className="w-full max-w-lg border-2 border-white bg-black shadow-[8px_8px_0px_0px_rgba(255,255,255,1)]">
@@ -148,7 +149,6 @@ export default function Hero() {
         </div>
       )}
 
-      {/* ---------------- HERO ---------------- */}
       <div className="text-center mb-24">
         <div className="inline-flex items-center gap-3 border border-white px-4 py-2 mb-10 text-xs font-bold tracking-widest bg-black">
           <span className="animate-pulse text-green-400">■</span>
@@ -174,9 +174,12 @@ export default function Hero() {
             [ INITIALIZE_TASK ]
           </button>
 
-          <button className="border-2 border-white px-8 py-4 bg-black text-white hover:bg-white/10 transition-all font-bold">
+          <Link href='/gigs'>
+
+          <button  className="border-2 border-white px-8 py-4 bg-black text-white hover:bg-white/10 transition-all font-bold">
             VIEW_CONTRACTS
           </button>
+          </Link>
         </div>
       </div>
     </>
